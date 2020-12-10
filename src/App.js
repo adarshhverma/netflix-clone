@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Row from './Row';
-import requests from './requests';
-import Banner from './Banner';
-import Nav from './Nav'
-import Credit from './Credit';
+import Row from './components/Row';
+import requests from './util/requests';
+import Banner from './components/Banner';
+import Nav from './components/Nav'
+import Credit from './components/Credit';
 
 function App() {
   return (

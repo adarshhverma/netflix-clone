@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import axios from './axios'
-import requests from './requests'
-import './Banner.css'
+import axios from '../util/axios'
+import requests from '../util/requests'
+import '../style/Banner.css'
 import Modal from 'react-modal'
+import Credit from './Credit'
 
 function Banner() {
 
@@ -20,7 +21,7 @@ function Banner() {
         fetchData();
     }, [])
 
-    console.log(movie)
+    // console.log(movie)
 
     function truncate(str,n){
         return str?.length > n ? str.substr(0,n-1) + '...' : str;
